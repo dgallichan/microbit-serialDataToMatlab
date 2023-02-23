@@ -38,5 +38,6 @@ basic.forever(function () {
     if (isLogging && !(asFastAsPossible)) {
         serial.writeLine("" + convertToText(control.millis()) + "," + convertToText(input.magneticForce(Dimension.X)) + "," + convertToText(input.magneticForce(Dimension.Y)) + "," + convertToText(input.magneticForce(Dimension.Z)))
     }
-    basic.pause(50)
+    // Add a delay here to slow down sampling rate
+    basic.pause(0)
 })
