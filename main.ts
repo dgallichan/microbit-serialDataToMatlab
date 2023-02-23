@@ -1,6 +1,6 @@
 input.onButtonPressed(Button.A, function () {
     isLogging = !(isLogging)
-    if (true) {
+    if (isLogging) {
         basic.showLeds(`
             . . . . .
             . . . . .
